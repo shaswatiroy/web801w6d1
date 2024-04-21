@@ -22,7 +22,18 @@ body {
   display: grid;
   grid-gap: 1rem;
 }
-
+/* Is the screen larger than 600px? If so, two columns. */
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Is the screen size larger than 900px? If so, three columns. */
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 </style>
 </head>
 <body>
